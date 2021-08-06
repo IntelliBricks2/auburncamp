@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Login Page</title>
+	<script type="text/javascript">
+		function checkpassword() {
+			var password = document.getElementById("passwordbox");
+			var passwordText = password.value;
+
+			if(passwordText == "Password123"){
+				return true;
+			}
+			else{
+				alert("Access Denied. Get the correct password and log in.")
+				return false;
+			}
+		}
+
+	</script>
+
+
+</head>
+<body>
+
+<p style="font-size: 80px;">Welcome!</p>
+<p>Please enter the password to view the following website.</p>
+<p>Password: <input id="passwordbox" type="password"></p>
+<a href="MrMike.html" onclick="return checkpassword();">Click here to submit the password and view the website.</a>
+</body>
+</html>
